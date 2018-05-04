@@ -12,5 +12,11 @@
 #' @examples
 #' Double(runinf(3))
 Double <- function(number) {
-  return(2 * number)
+  #input check
+  if(!is.numeric(number))
+    stop("You need to put a number, you cow")
+  return(2L * number)
 }
+
+
+
